@@ -54,27 +54,27 @@ class Dashboard:
         buttons_frame.pack(expand=True, fill='both', padx=20, pady=20)
 
         if self.user.role in ["management"]:
-            self.btn_generate_stats = tk.Button(buttons_frame, text="Generate Key Statistics", command=self.generate_statistics, bg="#0077cc", fg="white")  # Blue button with white text
+            self.btn_generate_stats = tk.Button(buttons_frame, text="Generate Key Statistics", command=self.generate_statistics, bg="#0077cc", fg="black")  # Blue button with black text
             self.btn_generate_stats.grid(row=0, column=0, padx=10, pady=10)
 
         if self.user.role in ["admin"]:
-            self.btn_count_visits = tk.Button(buttons_frame, text="Count Visits", command=self.count_visits, bg="#0077cc", fg="white")  # Blue button with white text
+            self.btn_count_visits = tk.Button(buttons_frame, text="Count Visits", command=self.count_visits, bg="#0077cc", fg="black")  # Blue button with black text
             self.btn_count_visits.grid(row=0, column=0, padx=10, pady=10)
 
         if self.user.role in ["clinician", "nurse"]:
-            self.btn_retrieve_patient = tk.Button(buttons_frame, text="Retrieve Patient", command=self.retrieve_patient, bg="#0077cc", fg="white")  # Blue button with white text
+            self.btn_retrieve_patient = tk.Button(buttons_frame, text="Retrieve Patient", command=self.retrieve_patient, bg="#0077cc", fg="black")  # Blue button with black text
             self.btn_retrieve_patient.grid(row=0, column=1, padx=10, pady=10)
 
-            self.btn_add_patient = tk.Button(buttons_frame, text="Add Patient", command=self.add_patient, bg="#0077cc", fg="white")  # Blue button with white text
+            self.btn_add_patient = tk.Button(buttons_frame, text="Add Patient", command=self.add_patient, bg="#0077cc", fg="black")  # Blue button with black text
             self.btn_add_patient.grid(row=0, column=0, padx=10, pady=10)
 
-            self.btn_remove_patient = tk.Button(buttons_frame, text="Remove Patient", command=self.remove_patient, bg="#0077cc", fg="white")  # Blue button with white text
+            self.btn_remove_patient = tk.Button(buttons_frame, text="Remove Patient", command=self.remove_patient, bg="#0077cc", fg="black")  # Blue button with black text
             self.btn_remove_patient.grid(row=1, column=0, padx=10, pady=10)
 
-            self.btn_count_visits = tk.Button(buttons_frame, text="Count Visits", command=self.count_visits, bg="#0077cc", fg="white")  # Blue button with white text
+            self.btn_count_visits = tk.Button(buttons_frame, text="Count Visits", command=self.count_visits, bg="#0077cc", fg="black")  # Blue button with black text
             self.btn_count_visits.grid(row=1, column=1, columnspan=2, padx=10, pady=10)
 
-        self.btn_logout = tk.Button(self.root, text="Exit", command=self.log_out, bg="#ff6347", fg="white")  # Red button with white text
+        self.btn_logout = tk.Button(self.root, text="Exit", command=self.log_out, bg="#ff6347", fg="black")  # Red button with black text
         self.btn_logout.pack()
 
     def generate_statistics(self):
